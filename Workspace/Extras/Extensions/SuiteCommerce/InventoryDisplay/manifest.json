@@ -1,0 +1,88 @@
+{
+	"name": "InventoryDisplay",
+	"fantasyName": "Inventory Display",
+	"vendor": "SuiteCommerce",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.2.10",
+	"description": "The SuiteCommerce Inventory Display extension allows customers to show inventory status and quantity on the item's Product Detail Page.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ItemBehavior.Service.ss",
+				"services/DropShipItemsBehavior.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/InventoryDisplay/Configuration/InventoryDisplay.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/InventoryDisplay/Templates/suitecommerce_inventorydisplay.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_inventorydisplay.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_inventorydisplay.scss",
+			"Modules/Main/Sass/_inventorydisplay-variables.scss",
+			"Modules/Main/Sass/_box.scss",
+			"Modules/Main/Sass/_check.scss",
+			"Modules/Main/Sass/_info.scss",
+			"Modules/Main/Sass/_times.scss",
+			"Modules/Main/Sass/_truck.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.InventoryDisplay.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.InventoryDisplay.Main.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.DropShipItem.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.RegularItem.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.SpecialOrderItem.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Website.Model.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/Utils.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/SuiteCommerce.InventoryDisplay.Main.js",
+		"files": [
+			"Modules/ItemBehavior/SuiteScript/ItemBehavior.js",
+			"Modules/Main/SuiteScript/SuiteCommerce.InventoryDisplay.Main.js",
+			"Modules/ItemBehavior/SuiteScript/ItemBehavior.ServiceController.js",
+			"Modules/ItemBehavior/SuiteScript/DropShipItemsBehavior.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/extensions/SuiteCommerce/InventoryDisplay@1.2.10",
+	"activation_id": 8,
+	"extension_id": "14901"
+}

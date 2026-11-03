@@ -1,0 +1,29 @@
+{
+	"name": "MenuTabletFix",
+	"fantasyName": "Menu Tablet Fix",
+	"vendor": "NsEcom",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Extension to fix the space problem in tablet devices.",
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_menu-tablet-fix.scss",
+			"myaccount": "Modules/Main/Sass/_menu-tablet-fix.scss",
+			"checkout": "Modules/Main/Sass/_menu-tablet-fix.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_menu-tablet-fix.scss"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/NsEcom/MenuTabletFix@1.0.0",
+	"activation_id": 8,
+	"extension_id": "8902"
+}

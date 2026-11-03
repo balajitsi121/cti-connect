@@ -1,0 +1,55 @@
+{
+	"name": "CMSMerchandisingZoneFix",
+	"fantasyName": "CMS Merchandising Zone Fix",
+	"version": "1.0.0",
+	"vendor": "SC",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Integrates the standard Carrousel Item Views provided by SCS with CMS Merchandising zones",
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CMSMerchandisingZoneFix/Templates/merch_zone_cms.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CMSMerchandisingZoneFix/Templates/merch_zone_cms.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CMSMerchandisingZoneFix/Templates/merch_zone_cms.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CMSMerchandisingZoneFix/JavaScript/SC.CMSMerchandisingZoneFix.1.0.0.CMSMerchandisingZoneFix.js",
+			"checkout": "Modules/CMSMerchandisingZoneFix/JavaScript/SC.CMSMerchandisingZoneFix.1.0.0.CMSMerchandisingZoneFix.js",
+			"myaccount": "Modules/CMSMerchandisingZoneFix/JavaScript/SC.CMSMerchandisingZoneFix.1.0.0.CMSMerchandisingZoneFix.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CMSMerchandisingZoneFix/JavaScript/SC.CMSMerchandisingZoneFix.1.0.0.CMSMerchandisingZoneFix.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CMSMerchandisingZoneFix/JavaScript/SC.CMSMerchandisingZoneFix.1.0.0.CMSMerchandisingZoneFix.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CMSMerchandisingZoneFix/JavaScript/SC.CMSMerchandisingZoneFix.1.0.0.CMSMerchandisingZoneFix.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 582380/extensions/SC/CMSMerchandisingZoneFix@1.0.0",
+	"activation_id": 8,
+	"extension_id": "1401"
+}

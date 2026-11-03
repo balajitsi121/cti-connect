@@ -1,0 +1,83 @@
+{
+	"name": "TopDealsExt",
+	"fantasyName": "Top deals Extensions",
+	"vendor": "Convergence",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Top deals and Exclusive Offers Extensions",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/TopDealsExt.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/TopDealsExt/Configuration/TopDealsExt.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TopDealsExt/Templates/convergence_topdealsext_topdealsext.tpl",
+					"Modules/TopDealsExt/Templates/topdeals_itemcell.tpl",
+					"Modules/TopDealsExt/Templates/topdeals_quick_addtocart.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss"
+		},
+		"files": [
+			"Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss",
+			"Modules/TopDealsExt/Sass/_slick-theme.scss",
+			"Modules/TopDealsExt/Sass/_slick.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/TopDealsExt/JavaScript/Convergence.TopDealsExt.TopDealsExt.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TopDealsExt/JavaScript/Convergence.TopDealsExt.TopDealsExt.js",
+					"Modules/TopDealsExt/JavaScript/TopDealsExt.View.js",
+					"Modules/TopDealsExt/JavaScript/Convergence.TopDealsExt.TopDealsExt.Model.js",
+					"Modules/TopDealsExt/JavaScript/Convergence.TopDealsExty.TopDealsExt.Collection.js",
+					"Modules/TopDealsExt/JavaScript/TopDealsExt.ItemCell.View.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js",
+					"Modules/TopDealsExt/JavaScript/TopDealsExt.QuickAddtoCart.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/TopDealsExt/SuiteScript/Convergence.TopDealsExt.TopDealsExt.js",
+		"files": [
+			"Modules/TopDealsExt/SuiteScript/Convergence.TopDealsExt.TopDealsExt.js",
+			"Modules/TopDealsExt/SuiteScript/TopDealsExt.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Convergence/TopDealsExt@1.0.0",
+	"activation_id": 8,
+	"extension_id": "15603"
+}

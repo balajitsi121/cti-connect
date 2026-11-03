@@ -1,0 +1,71 @@
+{
+	"name": "featuredProd",
+	"fantasyName": "Featured Product Customization",
+	"vendor": "Convergence",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Featured Product Customization",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/featuredProd/Configuration/featuredProd.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/featuredProd/Templates/convergence_featuredprod_featuredprod.tpl",
+					"Modules/featuredProd/Templates/featuredProd_itemcell.tpl",
+					"Modules/featuredProd/Templates/featuredProd_quick_addtocart.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/featuredProd/Sass/_featuredprod-featuredprod.scss"
+		},
+		"files": [
+			"Modules/featuredProd/Sass/_featuredprod-featuredprod.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/featuredProd/JavaScript/Convergence.featuredProd.featuredProd.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/featuredProd/JavaScript/Convergence.featuredProd.featuredProd.js",
+					"Modules/featuredProd/JavaScript/featuredProd.View.js",
+					"Modules/featuredProd/JavaScript/Convergence.featuredProd.featuredProd.Model.js",
+					"Modules/featuredProd/JavaScript/Convergence.featuredProd.featuredProd.Collection.js",
+					"Modules/featuredProd/JavaScript/featuredProd.ItemCell.View.js",
+					"Modules/featuredProd/JavaScript/featuredProd.QuickAddtoCart.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Convergence/featuredProd@1.0.0",
+	"activation_id": 8,
+	"extension_id": "15601"
+}

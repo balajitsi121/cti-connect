@@ -1,0 +1,109 @@
+{
+	"name": "CreditApplicationExtension",
+	"fantasyName": "Credit Application",
+	"vendor": "CTI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=24.2.30",
+		"SCS": ">=24.2.30"
+	},
+	"version": "1.0.0",
+	"description": "SuiteCommerce Credit Application extension for NetSuite Custom Record 1584 with dual digital signature pads.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CreditApplication.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CreditApplicationModule/Configuration/CreditApplication.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CreditApplicationModule/Templates/cti_credit_application_form.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CreditApplicationModule/Templates/cti_credit_application_form.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CreditApplicationModule/Templates/cti_credit_application_form.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CreditApplicationModule/Sass/_creditapplication-module.scss",
+			"myaccount": "Modules/CreditApplicationModule/Sass/_creditapplication-module.scss",
+			"checkout": "Modules/CreditApplicationModule/Sass/_creditapplication-module.scss"
+		},
+		"files": [
+			"Modules/CreditApplicationModule/Sass/_creditapplication-module.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CreditApplicationModule/JavaScript/CTI.CreditApplication.CreditApplicationModule.js",
+			"myaccount": "Modules/CreditApplicationModule/JavaScript/CTI.CreditApplication.CreditApplicationModule.js",
+			"checkout": "Modules/CreditApplicationModule/JavaScript/CTI.CreditApplication.CreditApplicationModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CreditApplicationModule/JavaScript/CTI.CreditApplication.CreditApplicationModule.js",
+					"Modules/CreditApplicationModule/JavaScript/CreditApplication.View.js",
+					"Modules/CreditApplicationModule/JavaScript/CreditApplication.Model.js",
+					"Modules/CreditApplicationModule/JavaScript/SignaturePad.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CreditApplicationModule/JavaScript/CTI.CreditApplication.CreditApplicationModule.js",
+					"Modules/CreditApplicationModule/JavaScript/CreditApplication.View.js",
+					"Modules/CreditApplicationModule/JavaScript/CreditApplication.Model.js",
+					"Modules/CreditApplicationModule/JavaScript/SignaturePad.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CreditApplicationModule/JavaScript/CTI.CreditApplication.CreditApplicationModule.js",
+					"Modules/CreditApplicationModule/JavaScript/CreditApplication.View.js",
+					"Modules/CreditApplicationModule/JavaScript/CreditApplication.Model.js",
+					"Modules/CreditApplicationModule/JavaScript/SignaturePad.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CreditApplicationModule/SuiteScript/CTI.CreditApplication.CreditApplicationModule.js",
+		"files": [
+			"Modules/CreditApplicationModule/SuiteScript/CTI.CreditApplication.CreditApplicationModule.js",
+			"Modules/CreditApplicationModule/SuiteScript/CreditApplication.ServiceController.js",
+			"Modules/CreditApplicationModule/SuiteScript/CreditApplication.Model.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CreditApplicationModule/SuiteScript2/CreditApplication.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CTI/CreditApplicationExtension@1.0.0",
+	"activation_id": 8,
+	"extension_id": "16101"
+}

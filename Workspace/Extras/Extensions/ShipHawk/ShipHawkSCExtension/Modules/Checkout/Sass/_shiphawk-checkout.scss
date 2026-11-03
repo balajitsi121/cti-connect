@@ -1,0 +1,47 @@
+.order-wizard-shiphawk-module {
+	@extend .box-column;
+}
+  
+.order-wizard-shiphawk-module-title {
+	margin-bottom: $sc-margin-lv4;
+}
+  
+.order-wizard-shiphawk-module-message {
+	@extend .message-warning;
+}
+  
+.order-wizard-shiphawk-module-option-select {
+	@extend .input-large;
+}
+  
+.order-wizard-shiphawk-module-option {
+	color: $sc-color-copy;
+	display: block;
+	padding: $sc-padding-lv5;
+	margin-bottom: $sc-margin-lv2;
+	border: 1px solid $sc-color-theme-border;
+	cursor: pointer;
+}
+  
+.order-wizard-shiphawk-module-option-active {
+	background-color: $sc-neutral-shade-0;
+}
+  
+.order-wizard-shiphawk-module-checkbox {
+	margin-right: $sc-margin-lv2;
+}
+  
+.order-wizard-shiphawk-module-option-price {
+	float: right;
+}
+  
+.order-wizard-msr-shiphawk-module-message {
+	@extend .message-warning;
+}
+  
+.order-wizard-msr-shiphawk-package-message-icon {
+	@extend .icon-base;
+	@extend %fa-exclamation-triangle;
+}
+  
+  

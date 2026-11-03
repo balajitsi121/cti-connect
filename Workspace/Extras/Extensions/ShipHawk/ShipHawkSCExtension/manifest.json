@@ -1,0 +1,117 @@
+{
+	"name": "ShipHawkSCExtension",
+	"fantasyName": "ShipHawk SuiteCommerce Extension",
+	"vendor": "ShipHawk",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "4.0.8",
+	"description": "The ShipHawk SuiteCommerce Connector allows your organization to use ShipHawk’s in-cart rating functionality with your SuiteCommerce website. By connecting your SuiteCommerce solution with the ShipHawk extension, your organization can ensure your customers are receiving the optimal shipping rate at the time of checkout.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Checkout.Service.ss",
+				"services/PDP.Service.ss",
+				"services/Shopping.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Checkout/Configuration/Checkout.json",
+			"Modules/Shopping/Configuration/Shopping.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Checkout/Templates/katoomi_shiphawk_checkout.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_review.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_address.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_cartitemsship.tpl"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/Shopping/Templates/katoomi_shiphawk_shopping.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_review.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_address.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_cartitemsship.tpl",
+					"Modules/Checkout/Templates/katoomi_shiphawk_checkout.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Shopping/Sass/_shiphawk-shopping.scss",
+			"checkout": "Modules/Checkout/Sass/_shiphawk-checkout.scss"
+		},
+		"files": [
+			"Modules/Checkout/Sass/_shiphawk-checkout.scss",
+			"Modules/Shopping/Sass/_shiphawk-shopping.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.js",
+			"shopping": "Modules/Shopping/JavaScript/Katoomi.Shiphawk.Shopping.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.js",
+					"Modules/Checkout/JavaScript/Checkout.View.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.Model.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.Collection.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.SS2Model.js",
+					"Modules/Checkout/JavaScript/Review.View.js",
+					"Modules/Checkout/JavaScript/Address.View.js",
+					"Modules/Checkout/JavaScript/CartItemsShip.View.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Settings.Model.js"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/Shopping/JavaScript/Katoomi.Shiphawk.Shopping.js",
+					"Modules/Shopping/JavaScript/Shopping.View.js",
+					"Modules/Shopping/JavaScript/Katoomi.Shiphawk.Shopping.Model.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.Collection.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Checkout.SS2Model.js",
+					"Modules/Checkout/JavaScript/Review.View.js",
+					"Modules/Checkout/JavaScript/Address.View.js",
+					"Modules/Checkout/JavaScript/CartItemsShip.View.js",
+					"Modules/Checkout/JavaScript/Katoomi.Shiphawk.Settings.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Checkout/SuiteScript/Katoomi.Shiphawk.Checkout.js",
+		"files": [
+			"Modules/Checkout/SuiteScript/Katoomi.Shiphawk.Checkout.js",
+			"Modules/Checkout/SuiteScript/Checkout.ServiceController.js",
+			"Modules/Shopping/SuiteScript/Katoomi.Shiphawk.Shopping.js",
+			"Modules/Shopping/SuiteScript/Shopping.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/Checkout/SuiteScript2/Checkout.Service.ss",
+			"Modules/Checkout/SuiteScript2/Settings.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/extensions/ShipHawk/ShipHawk_SCA_Connector/ShipHawkSCExtension@4.0.8",
+	"activation_id": 8,
+	"extension_id": "15301"
+}

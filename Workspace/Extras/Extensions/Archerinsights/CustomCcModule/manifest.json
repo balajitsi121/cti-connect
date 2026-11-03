@@ -1,0 +1,78 @@
+{
+	"name": "CustomCcModule",
+	"fantasyName": "Custom CC Module",
+	"vendor": "Archerinsights",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This is a module to uses an external payment processor",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CustomCcModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/CustomCcModule/Templates/archerinsights_customccmodule_customccmodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CustomCcModule/Templates/archerinsights_customccmodule_customccmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/CustomCcModule/Sass/_customccmodule-customccmodule.scss",
+			"checkout": "Modules/CustomCcModule/Sass/_customccmodule-customccmodule.scss"
+		},
+		"files": [
+			"Modules/CustomCcModule/Sass/_customccmodule-customccmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/CustomCcModule/JavaScript/Archerinsights.CustomCcModule.CustomCcModule.js",
+			"checkout": "Modules/CustomCcModule/JavaScript/Archerinsights.CustomCcModule.CustomCcModule.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/CustomCcModule/JavaScript/Archerinsights.CustomCcModule.CustomCcModule.js",
+					"Modules/CustomCcModule/JavaScript/CustomCcModule.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CustomCcModule/JavaScript/Archerinsights.CustomCcModule.CustomCcModule.js",
+					"Modules/CustomCcModule/JavaScript/CustomCcModule.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CustomCcModule/SuiteScript/Archerinsights.CustomCcModule.CustomCcModule.js",
+		"files": [
+			"Modules/CustomCcModule/SuiteScript/Archerinsights.CustomCcModule.CustomCcModule.js",
+			"Modules/CustomCcModule/SuiteScript/CustomCcModule.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Archerinsights/CustomCcModule@1.0.0",
+	"activation_id": 8,
+	"extension_id": "2001"
+}

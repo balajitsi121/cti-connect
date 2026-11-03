@@ -1,0 +1,347 @@
+// SASS Stylesheet for SuiteCommerce Credit Application
+
+$credit-primary: #003366;
+$credit-primary-hover: #002244;
+$credit-secondary: #6c757d;
+$credit-bg-light: #f8f9fa;
+$credit-card-border: #e2e8f0;
+$credit-error: #d9534f;
+$credit-success: #28a745;
+$credit-text: #2d3748;
+
+.credit-application-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    color: $credit-text;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    .credit-application-header {
+        text-align: center;
+        margin-bottom: 25px;
+
+        .credit-application-title {
+            color: $credit-primary;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .credit-application-subtitle {
+            color: #718096;
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+
+    .credit-application-alert-container {
+        margin-bottom: 20px;
+
+        .credit-application-alert {
+            display: flex;
+            align-items: flex-start;
+            padding: 16px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+
+            .credit-application-alert-icon {
+                font-size: 24px;
+                margin-right: 12px;
+                line-height: 1;
+            }
+
+            .credit-application-alert-content {
+                flex: 1;
+
+                .credit-application-alert-heading {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0 0 6px 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+
+            &.credit-application-alert-success {
+                background-color: #e6f4ea;
+                border: 1px solid #b7e1cd;
+                color: #137333;
+            }
+
+            &.credit-application-alert-error {
+                background-color: #fce8e6;
+                border: 1px solid #f5c2c7;
+                color: #c5221f;
+            }
+        }
+    }
+
+    .credit-application-card {
+        background: #ffffff;
+        border: 1px solid $credit-card-border;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+        margin-bottom: 25px;
+        overflow: hidden;
+
+        .credit-application-card-header {
+            background-color: $credit-primary;
+            color: #ffffff;
+            padding: 14px 20px;
+
+            h2 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+        }
+
+        .credit-application-card-body {
+            padding: 20px;
+        }
+    }
+
+    .credit-application-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .credit-application-col-12 { flex: 0 0 100%; max-width: 100%; padding: 0 10px; }
+    .credit-application-col-6  { flex: 0 0 50%; max-width: 50%; padding: 0 10px; }
+    .credit-application-col-4  { flex: 0 0 33.3333%; max-width: 33.3333%; padding: 0 10px; }
+
+    @media (max-width: 768px) {
+        .credit-application-col-6,
+        .credit-application-col-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .credit-application-group {
+        margin-bottom: 16px;
+    }
+
+    .credit-application-label {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 6px;
+        color: #2d3748;
+
+        .required {
+            color: $credit-error;
+        }
+    }
+
+    .credit-application-sublabel {
+        display: block;
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 4px;
+        color: #4a5568;
+
+        .required {
+            color: $credit-error;
+        }
+    }
+
+    .credit-application-input,
+    .credit-application-select {
+        width: 100%;
+        padding: 9px 12px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #cbd5e0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:focus {
+            border-color: $credit-primary;
+            outline: 0;
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.15);
+        }
+    }
+
+    .credit-application-fieldset {
+        border: 1px dashed #cbd5e0;
+        border-radius: 6px;
+        padding: 15px;
+        margin: 15px 0 20px 0;
+
+        .credit-application-legend {
+            font-weight: 600;
+            font-size: 14px;
+            color: $credit-primary;
+            padding: 0 8px;
+            width: auto;
+
+            .required {
+                color: $credit-error;
+            }
+        }
+    }
+
+    .credit-application-radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 5px;
+
+        .credit-application-radio-label {
+            font-size: 14px;
+            font-weight: normal;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            input[type="radio"] {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .credit-application-checkbox-label {
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+        line-height: 1.5;
+        display: block;
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .required {
+            color: $credit-error;
+        }
+    }
+
+    .credit-application-error-text {
+        display: block;
+        color: $credit-error;
+        font-size: 12px;
+        margin-top: 4px;
+        min-height: 16px;
+    }
+
+    /* Signature Pad Styling */
+    .signature-pad-wrapper {
+        border: 1px solid #cbd5e0;
+        border-radius: 6px;
+        background-color: #ffffff;
+        padding: 10px;
+        max-width: 420px;
+
+        .signature-pad-container {
+            border: 1px dashed #a0aec0;
+            border-radius: 4px;
+            background-color: #fafafa;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            .signature-pad-canvas {
+                width: 100%;
+                max-width: 400px;
+                height: 180px;
+                cursor: crosshair;
+                touch-action: none;
+                display: block;
+            }
+        }
+
+        .signature-pad-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+
+            .credit-application-btn-secondary {
+                background-color: #edf2f7;
+                color: #4a5568;
+                border: 1px solid #cbd5e0;
+                padding: 6px 12px;
+                font-size: 12px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: #e2e8f0;
+                }
+            }
+
+            .signature-status {
+                font-size: 12px;
+                color: #a0aec0;
+                font-style: italic;
+            }
+        }
+    }
+
+    .credit-application-legal-text {
+        font-size: 13px;
+        color: #4a5568;
+        background: #f7fafc;
+        border-left: 4px solid $credit-primary;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .credit-application-actions {
+        margin-top: 25px;
+        text-align: right;
+
+        .credit-application-btn-primary {
+            background-color: $credit-primary;
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover:not(:disabled) {
+                background-color: $credit-primary-hover;
+            }
+
+            &:disabled {
+                opacity: 0.65;
+                cursor: not-allowed;
+            }
+        }
+
+        .credit-application-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+        }
+    }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

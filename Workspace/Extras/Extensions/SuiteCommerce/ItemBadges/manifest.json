@@ -1,0 +1,85 @@
+{
+	"name": "ItemBadges",
+	"fantasyName": "Item Badges",
+	"vendor": "SuiteCommerce",
+	"version": "1.1.8",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Item Badges extension allows you to display promotional badges on a product. Badges appear on the product detail and product listings pages, as well as in image carousels.",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/ItemBadges.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_itembadges.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_itembadges.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/itembadges_list.tpl",
+					"Modules/Main/Templates/itembadges_view.tpl",
+					"Modules/Main/Templates/itembadges_svg_bookmark.tpl",
+					"Modules/Main/Templates/itembadges_svg_diagonal_banner.tpl",
+					"Modules/Main/Templates/itembadges_svg_flag.tpl",
+					"Modules/Main/Templates/itembadges_svg_rectangle_banner.tpl",
+					"Modules/Main/Templates/itembadges_svg_tag.tpl",
+					"Modules/Main/Templates/itembadges_svg_tapered_banner.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.ItemBadges.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.ItemBadges.EntryPoint.js",
+					"Modules/Main/JavaScript/ItemBadges.ProductDetail.js",
+					"Modules/Main/JavaScript/ItemBadges.Collection.js",
+					"Modules/Main/JavaScript/ItemBadges.Model.js",
+					"Modules/Main/JavaScript/ItemBadges.View.js",
+					"Modules/Main/JavaScript/ItemBadges.BadgesList.View.js",
+					"Modules/Main/JavaScript/ItemBadges.ProductList.js",
+					"Modules/Main/JavaScript/ItemBadges.GlobalViews.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.Collection.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.Model.js",
+					"Modules/Instrumentation/JavaScript/Logger.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": [
+			"assets/services/ItemBadges.Service.ss"
+		]
+	},
+	"local_folder": "Workspace\\ItemBadges",
+	"path": "SuiteScripts/extensions/SuiteCommerce/ItemBadges@1.1.8",
+	"activation_id": 8,
+	"extension_id": "16001"
+}

@@ -1,0 +1,71 @@
+{
+	"name": "ProductLeadTime",
+	"fantasyName": "Product Lead Time",
+	"vendor": "SuiteCommerce",
+	"version": "1.1.2",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Product Lead Time extension allows you to display the estimated wait time until an out-of-stock product is back in stock.",
+	"cct": [],
+	"skins": [],
+	"assets": {
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ProductLeadTime.service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Common/Configuration/Subtab.Configuration.json",
+			"Modules/PDP/Configuration/PDP.Configuration.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDP/Templates/sc_product_lead_time_pdp.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.ProductLeadTime.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Main/JavaScript/SuiteCommerce.ProductLeadTime.Shopping.js",
+					"Modules/PDP/JavaScript/PDP.Configuration.js",
+					"Modules/PDP/JavaScript/PDP.js",
+					"Modules/PDP/JavaScript/PDP.Model.js",
+					"Modules/PDP/JavaScript/PDP.View.js",
+					"Modules/Common/JavaScript/Instrumentation.Helper.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/SuiteCommerce.ProductLeadTime.Main.js",
+		"files": [
+			"Modules/Main/SuiteScript/SuiteCommerce.ProductLeadTime.Main.js",
+			"Modules/PDP/SuiteScript/PDP.ProductLeadTime.js",
+			"Modules/PDP/SuiteScript/PDP.ProductLeadTime.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/extensions/SuiteCommerce/ProductLeadTime@1.1.2",
+	"activation_id": 8,
+	"extension_id": "14903"
+}

@@ -1,0 +1,138 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Add Poppins font-face
+@font-face {
+  font-family: 'Poppins';
+  src: url(getThemeAssetsPath('Poppins/Poppins-Regular.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-Thin.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-ExtraLight.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-Light.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-Medium.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-SemiBold.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-Bold.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-ExtraBold.ttf')),
+       url(getThemeAssetsPath('Poppins/Poppins-Black.ttf'));
+  font-style: normal;
+}
+// @font-face {
+//   font-family: 'Poppins-thin';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-Thin.ttf'));
+//   font-weight: 100;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-extralight';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-ExtraLight.ttf'));
+//   font-weight: 200;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-light';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-Light.ttf'));
+//   font-weight: 300;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-regular';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-Regular.ttf'));
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-medium';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-Medium.ttf'));
+//   font-weight: 500;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-semibold';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-SemiBold.ttf'));
+//   font-weight: 600;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-bold';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-Bold.ttf'));
+//   font-weight: 700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-extrabold';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-ExtraBold.ttf'));
+//   font-weight: 800;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-black';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-Black.ttf'));
+//   font-weight: 900;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Poppins-thin-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-ThinItalic.ttf'));
+//   font-weight: 100;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-extralight-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-ExtraLightItalic.ttf'));
+//   font-weight: 200;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-light-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-LightItalic.ttf'));
+//   font-weight: 300;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-regular-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-RegularItalic.ttf'));
+//   font-weight: 400;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-medium-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-MediumItalic.ttf'));
+//   font-weight: 500;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-semibold-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-SemiBoldItalic.ttf'));
+//   font-weight: 600;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-bold-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-BoldItalic.ttf'));
+//   font-weight: 700;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-extrabold-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-ExtraBoldItalic.ttf'));
+//   font-weight: 800;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Poppins-black-italic';
+//   src: url(getThemeAssetsPath('Poppins/Poppins-BlackItalic.ttf'));
+//   font-weight: 900;
+//   font-style: italic;
+// }

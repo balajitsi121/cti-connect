@@ -1,0 +1,76 @@
+{
+	"name": "ShopByCatBrand",
+	"fantasyName": "Shop By categories and Brands",
+	"vendor": "Convergence",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Shop By categories and Brands extension",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ShopByCatBrand.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ShopByCatBrand/Configuration/ShopByCatBrand.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShopByCatBrand/Templates/convergence_shopbycatbrand_shopbycatbrand.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ShopByCatBrand/Sass/_shopbycatbrand-shopbycatbrand.scss"
+		},
+		"files": [
+			"Modules/ShopByCatBrand/Sass/_shopbycatbrand-shopbycatbrand.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ShopByCatBrand/JavaScript/Convergence.ShopByCatBrand.ShopByCatBrand.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShopByCatBrand/JavaScript/Convergence.ShopByCatBrand.ShopByCatBrand.js",
+					"Modules/ShopByCatBrand/JavaScript/ShopByCatBrand.View.js",
+					"Modules/ShopByCatBrand/JavaScript/Convergence.ShopByCatBrand.ShopByCatBrand.Model.js",
+					"Modules/ShopByCatBrand/JavaScript/ShopByCatBrand.Collection.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ShopByCatBrand/SuiteScript/Convergence.ShopByCatBrand.ShopByCatBrand.js",
+		"files": [
+			"Modules/ShopByCatBrand/SuiteScript/Convergence.ShopByCatBrand.ShopByCatBrand.js",
+			"Modules/ShopByCatBrand/SuiteScript/ShopByCatBrand.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Convergence/ShopByCatBrand@1.0.0",
+	"activation_id": 8,
+	"extension_id": "15501"
+}

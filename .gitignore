@@ -1,39 +1,14 @@
-
-# Dependencies
-node_modules/
-
-# Build output
+# Gulp build output
 dist/
 build/
-.next/
-out/
+.suitecommerce/
 
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
+# Gulp temporary files
+.tmp/
+.cache/
 
-# Debug logs
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-*.log
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE and editor settings
-.vscode/
-.idea/
-*.swp
-
-# Testing and coverage
-coverage/
-
-# Temporary files
-tmp/
-temp/
-
-# Local development
-.vercel/
+# Node dependencies
+node_modules/
+gulp/
+LocalDistribution/
+ns_npm_repository/

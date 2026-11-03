@@ -1,0 +1,23 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.orderhistorymodule-info-card {
+    @extend .info-card;
+}
+
+.orderhistorymodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.order-history-packages-items-table {
+    .tariff-container {
+        display: none;
+    }
+}

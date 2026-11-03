@@ -1,0 +1,103 @@
+{
+	"name": "GlobalExt",
+	"fantasyName": "Convergence Global Extension",
+	"vendor": "Convergence",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Global Extension is used in Shopping, Checkout and My Account page ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/GlobalExt.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/GlobalExt/Configuration/GlobalExt.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/GlobalExt/Templates/convergence_globalext_globalext.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/GlobalExt/Templates/convergence_globalext_globalext.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/GlobalExt/Templates/convergence_globalext_globalext.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/GlobalExt/Sass/_globalext-globalext.scss",
+			"myaccount": "Modules/GlobalExt/Sass/_globalext-globalext.scss",
+			"checkout": "Modules/GlobalExt/Sass/_globalext-globalext.scss"
+		},
+		"files": [
+			"Modules/GlobalExt/Sass/_globalext-globalext.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.js",
+			"myaccount": "Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.js",
+			"checkout": "Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.js",
+					"Modules/GlobalExt/JavaScript/GlobalExt.View.js",
+					"Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.js",
+					"Modules/GlobalExt/JavaScript/GlobalExt.View.js",
+					"Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.js",
+					"Modules/GlobalExt/JavaScript/GlobalExt.View.js",
+					"Modules/GlobalExt/JavaScript/Convergence.GlobalExt.GlobalExt.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/GlobalExt/SuiteScript/Convergence.GlobalExt.GlobalExt.js",
+		"files": [
+			"Modules/GlobalExt/SuiteScript/Convergence.GlobalExt.GlobalExt.js",
+			"Modules/GlobalExt/SuiteScript/GlobalExt.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Convergence/GlobalExt@1.0.0",
+	"activation_id": 8,
+	"extension_id": "15602"
+}

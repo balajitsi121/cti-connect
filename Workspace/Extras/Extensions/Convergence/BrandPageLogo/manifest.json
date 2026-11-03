@@ -1,0 +1,57 @@
+{
+	"name": "BrandPageLogo",
+	"fantasyName": "Brand Page Logo",
+	"vendor": "Convergence",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Shows the brand image from the 'shop By categories and brands' record in place of the title on brand category pages",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": []
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/BrandPageLogo/Sass/_brand-page-logo.scss"
+		},
+		"files": [
+			"Modules/BrandPageLogo/Sass/_brand-page-logo.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/BrandPageLogo/JavaScript/Convergence.BrandPageLogo.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BrandPageLogo/JavaScript/Convergence.BrandPageLogo.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Convergence/BrandPageLogo@1.0.0",
+	"activation_id": 8,
+	"extension_id": "16201"
+}

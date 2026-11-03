@@ -1,0 +1,105 @@
+{
+	"name": "TariffCalculation",
+	"fantasyName": "TariffCalculation",
+	"vendor": "CV",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {},
+	"version": "1.0.0",
+	"description": "This extension will show tariff on website. Also calculate tariff amount on orders.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/TariffModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/TariffModule/Configuration/TariffModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TariffModule/Templates/cv_tariffcalculation_tariffmodule.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/TariffModule/Templates/cv_tariffcalculation_tariffmodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/TariffModule/Templates/cv_tariffcalculation_tariffmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/TariffModule/Sass/_tariffcalculation-tariffmodule.scss",
+			"myaccount": "Modules/TariffModule/Sass/_tariffcalculation-tariffmodule.scss",
+			"checkout": "Modules/TariffModule/Sass/_tariffcalculation-tariffmodule.scss"
+		},
+		"files": [
+			"Modules/TariffModule/Sass/_tariffcalculation-tariffmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.js",
+			"myaccount": "Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.js",
+			"checkout": "Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.js",
+					"Modules/TariffModule/JavaScript/TariffModule.View.js",
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.Model.js",
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.js",
+					"Modules/TariffModule/JavaScript/TariffModule.View.js",
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.Model.js",
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.js",
+					"Modules/TariffModule/JavaScript/TariffModule.View.js",
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.Model.js",
+					"Modules/TariffModule/JavaScript/CV.TariffCalculation.TariffModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/TariffModule/SuiteScript/CV.TariffCalculation.TariffModule.js",
+		"files": [
+			"Modules/TariffModule/SuiteScript/CV.TariffCalculation.TariffModule.js",
+			"Modules/TariffModule/SuiteScript/TariffModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/TariffModule/SuiteScript2/TariffModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CV/TariffCalculation@1.0.0",
+	"activation_id": 8,
+	"extension_id": "14701"
+}

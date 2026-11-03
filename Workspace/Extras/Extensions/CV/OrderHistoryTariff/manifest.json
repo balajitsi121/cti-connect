@@ -1,0 +1,75 @@
+{
+	"name": "OrderHistoryTariff",
+	"fantasyName": "OrderHistoryTariff",
+	"vendor": "CV",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {},
+	"version": "1.0.0",
+	"description": "This Extension will hide tariff item on order history.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/OrderHistoryModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/OrderHistoryModule/Configuration/OrderHistoryModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/OrderHistoryModule/Templates/cv_orderhistorytariff_orderhistorymodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/OrderHistoryModule/Sass/_orderhistorytariff-orderhistorymodule.scss"
+		},
+		"files": [
+			"Modules/OrderHistoryModule/Sass/_orderhistorytariff-orderhistorymodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/OrderHistoryModule/JavaScript/CV.OrderHistoryTariff.OrderHistoryModule.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/OrderHistoryModule/JavaScript/CV.OrderHistoryTariff.OrderHistoryModule.js",
+					"Modules/OrderHistoryModule/JavaScript/OrderHistoryModule.View.js",
+					"Modules/OrderHistoryModule/JavaScript/CV.OrderHistoryTariff.OrderHistoryModule.Model.js",
+					"Modules/OrderHistoryModule/JavaScript/CV.OrderHistoryTariff.OrderHistoryModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/OrderHistoryModule/SuiteScript/CV.OrderHistoryTariff.OrderHistoryModule.js",
+		"files": [
+			"Modules/OrderHistoryModule/SuiteScript/CV.OrderHistoryTariff.OrderHistoryModule.js",
+			"Modules/OrderHistoryModule/SuiteScript/OrderHistoryModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/OrderHistoryModule/SuiteScript2/OrderHistoryModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CV/OrderHistoryTariff@1.0.0",
+	"activation_id": 8,
+	"extension_id": "14601"
+}

@@ -1,0 +1,46 @@
+{
+	"name": "SkuPlpAdd",
+	"fantasyName": "Sku Plp Add",
+	"vendor": "NSeComm",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Extension display the SKU in the PLP.",
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/sku_plp_add.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_sku-plp-add.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_sku-plp-add.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/NSeComm.SkuPlpAdd.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SkuPlpAdd.View.js",
+					"Modules/Main/JavaScript/NSeComm.SkuPlpAdd.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/NSeComm/SkuPlpAdd@1.0.0",
+	"activation_id": 8,
+	"extension_id": "9101"
+}
